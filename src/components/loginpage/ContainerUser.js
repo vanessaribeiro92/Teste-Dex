@@ -1,8 +1,8 @@
-import React, {Component} from "react"
-import {Link} from 'react-router-dom'
+import React, {Component} from "react";
+import {Link} from 'react-router-dom';
 
-import Divider from "../components/inputs/Divider"
-import FormSignIn from "./FormSignIn"
+import Divider from "../inputs/Divider";
+import FormSignIn from "./FormSignIn";
 
 export default class ContainerUser extends Component{
     render(){

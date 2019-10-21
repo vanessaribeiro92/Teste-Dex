@@ -1,13 +1,15 @@
 import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
 // Inputs
-import Input from "../../inputs/Input"
-import Checkbox from "../../inputs/Checkbox"
-import Button from "../../inputs/Button"
+import Input from "../inputs/Input";
+import Checkbox from "../inputs/Checkbox";
+import Button from "../inputs/Button";
 
 //Registrar
-import {Register} from '../../services/Register'
+import {Register} from '../../services/Register';
 
+//Authentification
+import { Auth } from "../../Auth";
 
 export default class FormSignUp extends Component{
 

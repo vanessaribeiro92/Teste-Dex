@@ -1,18 +1,15 @@
 import React, {Component} from 'react';
-
+import './css/bootstrap.min.css';
 //estilização
 import './css/style.css'
 
-
-import Divider from './components/inputs/Divider'
 //rotas
-// import Routes from './Routes';
+import Routes from './Routes';
 
 class App extends Component {
   render() {
     return (
-      <Divider/>
-      // <Routes/>
+      <Routes/>
     );
   }
 }

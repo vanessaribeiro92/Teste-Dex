@@ -1,8 +1,22 @@
 body{
-    font-family: "Open Sans" ;
-    background-color: #F9F9F9 ;
+    font-family: "Open Sans";
+    background-color: #F9F9F9;
 }
 
+.row{
+    padding-top: 2%; 
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* Inputs - Text */
 input[name=email], input[name=password]{
     margin: auto;
     max-width: 100%;
@@ -14,25 +28,17 @@ input[name=email], input[name=password]{
 }
 
 label[for=email], label[for=password], label[for=show-password]{
-    font-weight: 600 ;
-    font-size: 1rem ;
-    text-align: left ;
-    color: #4A4A4A ;
-    line-height: 1.3rem ;
-}
-
-label[for=show-password]{
-    font-weight: 300 ;
-    font-size: 1rem ;
-    text-align: left ;
-    color: #4A4A4A ;
-    line-height: 1.3rem ;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    color: #4A4A4A;
+    line-height: 1.3rem;
 }
 
 input::placeholder{
-    font-weight: 300 ;
-    color:  #9B9B9B ;
-    font-size: 1rem ;
+    font-weight: 300;
+    color:  #9B9B9B;
+    font-size: 1rem;
 }
 
 input[name=email]{
@@ -49,93 +55,160 @@ input[name=password]{
     background-size: 7%;
 }
 
-.sign-in{
-    border: none ;
-    background-image: linear-gradient(134.72deg, #AE23A9 0%, #DC4E1B 100%) ;
-    width: 100% ;
-    color: #ffffff ;
-    font-weight: 600;
-    letter-spacing: 1px;
+label[for=show-password]{
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left;
+    color: #4A4A4A;
+    line-height: 1.3rem;
 }
 
-.sign-up{
-    border: 1px solid #9B9B9B ;
-    background-color: #ffffff ;
-    color: #4A4A4A ;
-    width: 100% ;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.container-login{
-    box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.1) ;
-    background-color: #FFFFFF ;
-    margin-bottom: 5% ;
-}
-
-.container #orange{
-    padding-top: 15% ;
-    max-width: 60% ; 
-}
-
-.form{
-    padding-top: 10% ;
-    padding-bottom: 5% ; 
-}
-
-.problems-with-acess{
-    color: #4A4A4A ;
-    font-weight: 600 ;
-    font-size: 0.9rem ;
-    line-height: 5rem ; 
+/* Buttons - Inputs */
+.btn{
+    border-radius: 0;
 }
 
 .btn-primary{
-    line-height: 2rem ;
-}
-
-.row{
-    padding-top: 2% ; 
-}
-
-.terms-of-use{
-    padding-top: 5% ;
-    padding-bottom: 5% ; 
-    color: #4A4A4A ;
-    font-size: 0.9rem ;
-    font-weight: 300 ;
-    line-height: 1rem ;
-    text-align: left ;
+    line-height: 2rem;
 }
 
 /* inputs - Divider */
 .divider{
-    text-align: center ;
-    max-width: 100% ;
-    margin: 5% 0% ;
+    text-align: center;
+    max-width: 100%;
+    margin: 5% 0%;
 }
 .divider hr{
     display: inline-block;
     width: 40%;
 }
 .or{
-    font-weight: 300 ;
-    padding: 0 5% ;
+    font-weight: 300;
+    padding: 0 5%;
 }
 
 .or{
-    padding-bottom: 2% ;
+    padding-bottom: 2%;
 }
 
-/*  */
+/*Background - Login Page  */
 .bg-login{
-    margin-top: 30% ;
-    max-width: 100% ;
+    margin-top: 30%;
+    max-width: 100%;
 }
 
 .form-control{
     border-radius: 0;
 }
-.btn{
-    border-radius: 0;
+
+/* SignIn - Page */
+.sign-in{
+    border: none;
+    background-image: linear-gradient(134.72deg, #AE23A9 0%, #DC4E1B 100%);
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container-login{
+    box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    margin-bottom: 5%;
+}
+
+.container #orange{
+    padding-top: 15%;
+    max-width: 60%; 
+}
+
+/* SignUp - Page */
+.sign-up{
+    border: 1px solid #9B9B9B;
+    background-color: #ffffff;
+    color: #4A4A4A;
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Modal - SignUp */
+.bg-model{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    left: 0;
+}
+/* Form */
+.form{
+    padding-top: 10%;
+    padding-bottom: 5%; 
+}
+
+.problems-with-acess{
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 5rem; 
+}
+
+.terms-of-use{
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    color: #4A4A4A;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1rem;
+    text-align: left;
+}
+
+/* Navbar */
+
+.navbar-brand{
+    width: 20%;
+}
+.nav-link{
+    padding-left: 5rem;
+}
+.gradient{
+    background-image: linear-gradient(134.72deg, #AE23A9 0%, #DC4E1B 100%);
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shadow{
+    box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar{
+    min-height: 100px;
+    padding: 0px;
+}
+.active{
+    font-weight: 700;
+    opacity: 0.8;
+}
+/* MainList */
+.content{
+    margin-top: 10%;
+}
+.content h1{
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 600;
+    text-align: left;
+}
+
+.modal-content{
+    width: 30%;
+    height: 80%;
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    position: relative;
 }

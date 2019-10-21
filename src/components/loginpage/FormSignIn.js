@@ -1,13 +1,15 @@
 import React, { Component } from "react"
 import { Redirect } from "react-router-dom"
 // Inputs
-import Input from "../../inputs/Input"
-import Checkbox from "../../inputs/Checkbox"
-import Button from "../../inputs/Button"
+import Input from "../inputs/Input"
+import Checkbox from "../inputs/Checkbox"
+import Button from "../inputs/Button"
 // services
-import { LoginService } from '../../../services/LoginService'
+import { LoginService } from '../../services/LoginService'
 //Validation
-import { ValidateSession } from "../../../services/ValidateSession";
+import { ValidateSession } from "../../services/ValidateSession";
+//Authentification
+import { Auth } from "../../Auth";
 
 export default class FormSignIn extends Component {
 
@@ -73,17 +75,21 @@ export default class FormSignIn extends Component {
   return (
    <div>
     <form className="form" onSubmit={this.login}>
+      
      <Input label="Email" htmlFor="email" value={this.state.email}
       onChange={this.inputChange} type="email" name="email"
       className="form-control" placeholder="seunome@email.com" />
+
      <Input label="Password" htmlFor="password" value={this.state.password}
       onChange={this.inputChange} type={this.state.typePassword} name="password"
       className="form-control" placeholder="Password" />
+
      <Checkbox label="Mostrar a senha." htmlFor="show-password" checked={this.state.checkbox}
       onChange={this.checkboxChange} type="checkbox" name="checkbox"
       className="form-check-label" />
      <span className="text-danger">{this.state.msgErrorValidation}</span>
      <p className="problems-with-acess">Problemas para acessar sua conta?</p>
+
      <Button type="submit" className="btn btn-primary sign-in" value="Acessar" />
     </form>
    </div>
