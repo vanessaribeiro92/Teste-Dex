@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component, Fragment} from "react";
 
 // Dinamic Images from API
 import DinamicImage from "./DinamicImage";
@@ -46,8 +46,11 @@ export default class DinamicPage extends Component {
       {
        this.state.images.map(item => {
         return (
-       
+            
+        <Fragment>
          <DinamicImage key={item.id} src={item.link} alt={item.name}></DinamicImage> 
+         <p>{item.name}</p>
+         </Fragment>
          
         );
        })
